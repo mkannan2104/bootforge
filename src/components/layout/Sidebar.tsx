@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Disc, RotateCcw, Activity, Settings, HardDrive } from 'lucide-react';
+import { Home, Disc, RotateCcw, Activity, Settings } from 'lucide-react';
 
 export type NavTab = 'home' | 'create' | 'restore' | 'activity' | 'settings';
 
@@ -27,9 +27,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div>
         {/* Brand Header */}
         <div className="px-4 py-3.5 flex items-center gap-2.5 border-b border-slate-200 bg-slate-50">
-          <div className="w-7 h-7 rounded-none bg-slate-800 flex items-center justify-center text-white">
-            <HardDrive className="w-4 h-4" />
-          </div>
+          <img
+            src="/logo.png"
+            alt="BootForge Logo"
+            className="w-7 h-7 rounded-md object-contain shadow-sm border border-slate-700/20"
+          />
           <div>
             <h1 className="text-sm text-slate-800 tracking-tight leading-none">
               BootForge
