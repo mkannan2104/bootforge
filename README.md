@@ -112,6 +112,20 @@ cargo test --target x86_64-pc-windows-gnullvm
 npm run tauri dev
 ```
 
+### Build Windows Executable (.exe & Installers)
+You can build the standalone portable `.exe` and installer packages with one command:
+```powershell
+npm run build:exe
+```
+Or directly run the PowerShell script:
+```powershell
+.\build-exe.ps1
+```
+Output files are staged in the [`dist-exe/`](file:///dist-exe):
+- `dist-exe/BootForge.exe` — Standalone portable executable (runs immediately without installation)
+- `dist-exe/BootForge-Setup.exe` — Standard Windows NSIS installer
+- `dist-exe/BootForge.msi` — Windows Installer MSI package
+
 ---
 
 ## License
